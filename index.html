@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     
+    </script>
+</head>
+<body>
+   <h1>Q.1</h1>
+  Name:<input type="text" placeholder="Enter name" id="my text">
+   <br>
+   Amount:<input type="number" placeholder="Enter amount" id="total amount">
+   <br>
+   <button onclick="
+   let name=document.getElementById('my text') .value;
+   document.getElementById('heading') .innerText = name;"
+   >Write name
+    </button>
+    <br>
+    <button onclick="
+    var totalamount=document.getElementById('total amount') .value;
+    let zakatAmount = totalamount/40;
+    document.getElementById('heading1') .innerText = zakatAmount;">Calculate zakat</button>
+    <h1 style="color: green;" id="heading">Name</h1>
+    <h1 style="color: orange;" id="heading1">Amount</h1>
+    <h1>Q.2</h1>
+Total amount:<input type="number" placeholder="Enter total amount" id="total"><br>
+<button onclick="
+var totalamount=document.getElementById('total') .value;
+var wifeShare=totalamount/8;
+document.getElementById('heading2').innerHTML=wifeShare;"
+>Wife share
+</button>
+<br>
+<button onclick="
+var totalamount=document.getElementById('total') .value;
+var sonShare=totalamount/8*7;
+document.getElementById('heading3').innerHTML=sonShare;"
+>Son share
+</button>
+<h2 style="color: blue;" id="heading2">Wife share</h2>
+<h2 style="color: red;" id="heading3">Son share</h2>
+</body>
+</html>
